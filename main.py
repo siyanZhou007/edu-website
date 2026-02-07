@@ -10,7 +10,7 @@ from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import sessionmaker, Session
 import hashlib
 import secrets
-import jwt
+from jose import jwt
 import os
 
 app = FastAPI(title="智慧教育学院官网")

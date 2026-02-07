@@ -1,0 +1,40 @@
+{% extends "base.html" %}
+{% block title %}联系我们 - 智慧教育学院{% endblock %}
+{% block content %}
+<div class="container">
+    <h1 style="margin-bottom: 2rem; color: #1f2937;">联系我们</h1>
+    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem;">
+        <div style="background: white; padding: 2rem; border-radius: 10px;">
+            <h2 style="margin-bottom: 1.5rem; color: #1f2937;">留言咨询</h2>
+            <form>
+                <div class="form-group">
+                    <label>您的姓名</label>
+                    <input type="text" placeholder="请输入姓名">
+                </div>
+                <div class="form-group">
+                    <label>联系电话</label>
+                    <input type="tel" placeholder="请输入电话">
+                </div>
+                <div class="form-group">
+                    <label>电子邮箱</label>
+                    <input type="email" placeholder="请输入邮箱">
+                </div>
+                <div class="form-group">
+                    <label>留言内容</label>
+                    <textarea rows="5" placeholder="请输入留言内容"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary" style="width: 100%;">提交留言</button>
+            </form>
+        </div>
+        <div style="background: white; padding: 2rem; border-radius: 10px;">
+            <h2 style="margin-bottom: 1.5rem; color: #1f2937;">联系方式</h2>
+            <div style="margin-top: 1rem; color: #4b5563;">
+                <p style="margin-bottom: 1rem;">📍 地址：北京市朝阳区XX路XX号</p>
+                <p style="margin-bottom: 1rem;">📞 电话：400-XXX-XXXX</p>
+                <p style="margin-bottom: 1rem;">📧 邮箱：contact@eduschool.com</p>
+                <p>⏰ 工作时间：周一至周五 9:00-18:00</p>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

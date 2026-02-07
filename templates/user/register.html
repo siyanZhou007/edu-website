@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+{% block title %}用户注册 - 智慧教育学院{% endblock %}
+{% block content %}
+<div style="max-width: 400px; margin: 3rem auto; background: white; padding: 2rem; border-radius: 10px;">
+    <h2 style="text-align: center; margin-bottom: 1.5rem; color: #1f2937;">用户注册</h2>
+    <form action="/api/user/register" method="post">
+        <div class="form-group">
+            <label>用户名</label>
+            <input type="text" name="username" required>
+        </div>
+        <div class="form-group">
+            <label>电子邮箱</label>
+            <input type="email" name="email" required>
+        </div>
+        <div class="form-group">
+            <label>密码</label>
+            <input type="password" name="password" required>
+        </div>
+        <button type="submit" class="btn btn-primary" style="width: 100%;">注册</button>
+    </form>
+    <p style="text-align: center; margin-top: 1rem; color: #6b7280;">
+        已有账号？<a href="/user/login" style="color: #2563eb;">立即登录</a>
+    </p>
+</div>
+{% endblock %}
